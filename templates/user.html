@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>User Info</title>
+    </head>
+    <body>
+        <h2>User Information:</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>First Name:</td>
+                    <td>{{user["first_name"]}}</td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td>{{user["last_name"]}}</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>{{user["email"]}}</td>
+                </tr>
+                <tr>
+                    <td>Account Created:</td>
+                    <td>{{user["created_at"]}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <form action="logout" method="POST">
+            <input type="submit" value="Log out">
+        </form>
+    </body>
+</html>
